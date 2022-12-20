@@ -5,7 +5,7 @@ const Stack = createNativeStackNavigator();
 export default function CheckMem() {
   return (
     <View style={styles.container}>
-      <Text></Text>
+      <Text>kkk</Text>
     </View>
   );
 }
