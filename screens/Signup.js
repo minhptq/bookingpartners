@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from "react-native";
 export default function Signup() {
   return (
     <View style={styles.container}>
-      <Text>sssssss</Text>
+      <Text>Signup</Text>
     </View>
   );
 }
