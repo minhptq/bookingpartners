@@ -8,7 +8,7 @@ export default function CheckMem() {
   return (
     <Stack.Navigator>
       <Stack.Screen name="Signup" component={Signup} />
-      <Stack.Screen name="Signup" component={Signin} />
+      <Stack.Screen name="Signin" component={Signin} />
     </Stack.Navigator>
   );
 }
