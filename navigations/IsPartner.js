@@ -8,8 +8,8 @@ const Stack = createNativeStackNavigator();
 export default function IsPartner() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Signup" component={Signup} />
       <Stack.Screen name="Signin" component={Signin} />
+      <Stack.Screen name="Signup" component={Signup} />
     </Stack.Navigator>
   );
 }
