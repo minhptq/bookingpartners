@@ -4,7 +4,8 @@ import Signup from "../screens/Signup";
 import Signin from "../screens/Signin";
 
 const Stack = createNativeStackNavigator();
-export default function CheckMem() {
+
+export default function IsMember() {
   return (
     <Stack.Navigator>
       <Stack.Screen name="Signup" component={Signup} />
