@@ -5,7 +5,7 @@ import Signin from "../screens/Signin";
 
 const Stack = createNativeStackNavigator();
 
-export default function IsMember() {
+export default function IsPartner() {
   return (
     <Stack.Navigator>
       <Stack.Screen name="Signup" component={Signup} />
