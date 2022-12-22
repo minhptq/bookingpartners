@@ -1,4 +1,11 @@
-import { StyleSheet, Text, View, Modal, SafeAreaView } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  Modal,
+  SafeAreaView,
+  Button,
+} from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
 export default function PhoneOrEmail() {
@@ -7,6 +14,7 @@ export default function PhoneOrEmail() {
       <View style={styles.container}>
         <SafeAreaView></SafeAreaView>
         <Ionicons name="ios-close" size={24} color="black" />
+
         <Text>Phone or email </Text>
       </View>
     </Modal>
