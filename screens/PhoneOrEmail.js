@@ -14,6 +14,7 @@ export default function PhoneOrEmail() {
       <View style={styles.container}>
         <SafeAreaView></SafeAreaView>
         <Ionicons name="ios-close" size={24} color="black" />
+
         <Button title="Login"></Button>
         <Text>Phone or email </Text>
       </View>
