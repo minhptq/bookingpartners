@@ -1,12 +1,13 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
-import CheckMem from "./navigations/CheckMem";
+
+import IsPartner from "./navigations/IsPartner";
 
 export default function App() {
   return (
     <NavigationContainer>
-      <CheckMem />
+      <IsPartner />
     </NavigationContainer>
   );
 }
