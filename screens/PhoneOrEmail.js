@@ -4,6 +4,7 @@ export default function PhoneOrEmail() {
   return (
     <Modal>
       <View style={styles.container}>
+        <SafeAreaView></SafeAreaView>
         <Text>Phone or email </Text>
       </View>
     </Modal>
