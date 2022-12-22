@@ -1,12 +1,12 @@
-import { StyleSheet, Text, View, Modal } from "react-native";
+import { StyleSheet, Text, View, Modal, SafeAreaView } from "react-native";
 
 export default function PhoneOrEmail() {
   return (
-    <View style={styles.container}>
-      <Modal>
+    <Modal>
+      <View style={styles.container}>
         <Text>Phone or email </Text>
-      </Modal>
-    </View>
+      </View>
+    </Modal>
   );
 }
 
