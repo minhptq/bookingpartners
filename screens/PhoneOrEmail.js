@@ -16,7 +16,6 @@ export default function PhoneOrEmail() {
         <SafeAreaView></SafeAreaView>
         <Ionicons name="ios-close" size={24} color="black" />
         <TouchableOpacity>Login</TouchableOpacity>
-
         <Text>Phone or email </Text>
       </View>
     </Modal>
