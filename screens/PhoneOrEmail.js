@@ -17,14 +17,10 @@ export default function PhoneOrEmail() {
         <Table borderStyle={{ borderWidth: 2, borderColor: "#c8e1ff" }}>
           <Row
             data={[
-              () => {
-                <Ionicons name="ios-close" size={24} color="black" />;
-              },
-              () => {
-                <TouchableOpacity>
-                  <Text>Login</Text>
-                </TouchableOpacity>;
-              },
+              <Ionicons name="ios-close" size={24} color="black" />,
+              <TouchableOpacity>
+                <Text>Login</Text>
+              </TouchableOpacity>,
             ]}
             style={styles.loginbtn}
             textStyle={styles.text}
