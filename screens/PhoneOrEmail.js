@@ -17,7 +17,12 @@ export default function PhoneOrEmail() {
         <Table borderStyle={{ borderWidth: 2, borderColor: "#c8e1ff" }}>
           <Row
             data={[
-              <Ionicons name="ios-close" size={24} color="black" />,
+              <Ionicons
+                name="ios-close"
+                size={24}
+                color="black"
+                style={styles.closebtn}
+              />,
               <TouchableOpacity style={styles.loginbtn}>
                 <Text>Login</Text>
               </TouchableOpacity>,
@@ -34,6 +39,7 @@ export default function PhoneOrEmail() {
 
 const styles = StyleSheet.create({
   container: {},
+  closebtn: { paddingRight: 3 },
   loginbtn: { alignSelf: "flex-end", paddingRight: 7 },
   text: { margin: 6 },
 });
