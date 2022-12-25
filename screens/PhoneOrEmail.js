@@ -38,6 +38,6 @@ export default function PhoneOrEmail() {
 
 const styles = StyleSheet.create({
   container: {},
-  closebtn: { paddingLeft: 4 },
+  closebtn: { paddingLeft: 3 },
   loginbtn: { alignSelf: "flex-end", paddingRight: 7 },
 });
