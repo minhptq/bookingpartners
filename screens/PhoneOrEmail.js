@@ -34,6 +34,6 @@ export default function PhoneOrEmail() {
 
 const styles = StyleSheet.create({
   container: {},
-  loginbtn: {},
+  loginbtn: { right: "100%" },
   text: { margin: 6 },
 });
