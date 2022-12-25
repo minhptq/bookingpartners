@@ -18,11 +18,10 @@ export default function PhoneOrEmail() {
           <Row
             data={[
               <Ionicons name="ios-close" size={24} color="black" />,
-              <TouchableOpacity>
+              <TouchableOpacity style={styles.loginbtn}>
                 <Text>Login</Text>
               </TouchableOpacity>,
             ]}
-            style={styles.loginbtn}
             textStyle={styles.text}
           />
         </Table>
