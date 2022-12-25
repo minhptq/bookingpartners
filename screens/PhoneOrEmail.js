@@ -5,6 +5,7 @@ import {
   Modal,
   SafeAreaView,
   Button,
+  TouchableOpacity,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
@@ -14,8 +15,8 @@ export default function PhoneOrEmail() {
       <View style={styles.container}>
         <SafeAreaView></SafeAreaView>
         <Ionicons name="ios-close" size={24} color="black" />
+        <TouchableOpacity>Login</TouchableOpacity>
 
-        <Button title="Login"></Button>
         <Text>Phone or email </Text>
       </View>
     </Modal>
