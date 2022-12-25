@@ -41,5 +41,4 @@ const styles = StyleSheet.create({
   container: {},
   closebtn: { paddingLeft: 4 },
   loginbtn: { alignSelf: "flex-end", paddingRight: 7 },
-  text: { margin: 6 },
 });
