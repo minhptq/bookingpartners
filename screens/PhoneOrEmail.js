@@ -20,7 +20,6 @@ export default function PhoneOrEmail() {
             style={styles.head}
             textStyle={styles.text}
           />
-          <Rows data={state.tableData} textStyle={styles.text} />
         </Table>
         <Ionicons name="ios-close" size={24} color="black" />
         <TouchableOpacity style={styles.loginbtn}>
