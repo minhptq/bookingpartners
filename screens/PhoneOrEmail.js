@@ -15,7 +15,7 @@ export default function PhoneOrEmail() {
       <View style={styles.container}>
         <SafeAreaView></SafeAreaView>
         <Ionicons name="ios-close" size={24} color="black" />
-        <TouchableOpacity>
+        <TouchableOpacity style={styles.loginbtn}>
           <Text>Login</Text>
         </TouchableOpacity>
         <Text>Phone or email </Text>
@@ -26,4 +26,7 @@ export default function PhoneOrEmail() {
 
 const styles = StyleSheet.create({
   container: {},
+  loginbtn:{
+    right:100%
+  }
 });
