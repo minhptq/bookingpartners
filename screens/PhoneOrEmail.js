@@ -14,6 +14,14 @@ export default function PhoneOrEmail() {
     <Modal>
       <View style={styles.container}>
         <SafeAreaView></SafeAreaView>
+        <Table borderStyle={{ borderWidth: 2, borderColor: "#c8e1ff" }}>
+          <Row
+            data={state.tableHead}
+            style={styles.head}
+            textStyle={styles.text}
+          />
+          <Rows data={state.tableData} textStyle={styles.text} />
+        </Table>
         <Ionicons name="ios-close" size={24} color="black" />
         <TouchableOpacity style={styles.loginbtn}>
           <Text>Login</Text>
