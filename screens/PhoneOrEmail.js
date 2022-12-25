@@ -27,7 +27,6 @@ export default function PhoneOrEmail() {
                 <Text>Login</Text>
               </TouchableOpacity>,
             ]}
-            textStyle={styles.text}
           />
         </Table>
 
