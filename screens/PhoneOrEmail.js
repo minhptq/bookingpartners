@@ -4,10 +4,10 @@ import {
   View,
   Modal,
   SafeAreaView,
-  Button,
   TouchableOpacity,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { Table, Row, Rows } from "react-native-table-component";
 
 export default function PhoneOrEmail() {
   return (
