@@ -26,7 +26,7 @@ export default function PhoneOrEmail() {
 
 const styles = StyleSheet.create({
   container: {},
-  loginbtn:{
-    right:100%
-  }
+  loginbtn: {
+    right: "100%",
+  },
 });
