@@ -20,15 +20,17 @@ export default function PhoneOrEmail() {
               () => {
                 <Ionicons name="ios-close" size={24} color="black" />;
               },
+              () => {
+                <TouchableOpacity style={styles.loginbtn}>
+                  <Text>Login</Text>
+                </TouchableOpacity>;
+              },
             ]}
             style={styles.head}
             textStyle={styles.text}
           />
         </Table>
 
-        <TouchableOpacity style={styles.loginbtn}>
-          <Text>Login</Text>
-        </TouchableOpacity>
         <Text>Phone or email </Text>
       </View>
     </Modal>
