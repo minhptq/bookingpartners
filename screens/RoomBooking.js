@@ -16,6 +16,7 @@ export default function RoomBooking() {
         <SafeAreaView></SafeAreaView>
         <Table borderStyle={{ borderWidth: 2, borderColor: "#c8e1ff" }}>
           <Row
+          textStyle={},
             data={[
               <Ionicons
                 name="ios-close"
