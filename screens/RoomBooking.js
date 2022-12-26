@@ -16,7 +16,7 @@ export default function RoomBooking() {
         <SafeAreaView></SafeAreaView>
         <Table borderStyle={{ borderWidth: 2, borderColor: "#c8e1ff" }}>
           <Row
-          textStyle={styles.text},
+            textStyle={styles.text}
             data={[
               <Ionicons
                 name="ios-close"
@@ -41,5 +41,5 @@ const styles = StyleSheet.create({
   container: {},
   closebtn: { paddingLeft: 3 },
   loginbtn: { alignSelf: "flex-end", paddingRight: 7 },
-  text:{margin:6}
+  text: { margin: 6 },
 });
