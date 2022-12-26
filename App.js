@@ -8,6 +8,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <IsPartner />
+      <StatusBar style="dark" backgroundColor="white" />
     </NavigationContainer>
   );
 }
