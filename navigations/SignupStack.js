@@ -8,6 +8,7 @@ export default function SignupStack() {
   return (
     <Stack.Navigator>
       <Stack.Screen name="RoomBooking" component={RoomBooking} />
+      <Stack.Screen name="PhoneOrEmail" component={PhoneOrEmail} />
     </Stack.Navigator>
   );
 }
