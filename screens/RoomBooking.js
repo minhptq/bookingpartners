@@ -22,7 +22,7 @@ export default function RoomBooking() {
                 name="ios-close"
                 size={24}
                 color="black"
-                style={styles.closebtn}
+                // style={styles.closebtn}
               />,
               <TouchableOpacity style={styles.loginbtn}>
                 <Text>Login</Text>
