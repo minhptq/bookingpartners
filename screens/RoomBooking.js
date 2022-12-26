@@ -4,7 +4,7 @@ export default function RoomBooking() {
   return (
     <View style={styles.container}>
       <SafeAreaView></SafeAreaView>
-      <Text></Text>
+      <Text>Booking</Text>
     </View>
   );
 }
