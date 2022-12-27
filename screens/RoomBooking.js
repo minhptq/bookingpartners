@@ -34,5 +34,6 @@ const styles = StyleSheet.create({
   container: {},
   header: {
     alignItems: "stretch",
+    alignContent: "space-between",
   },
 });
