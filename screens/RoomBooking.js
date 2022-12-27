@@ -32,5 +32,7 @@ export default function RoomBooking() {
 
 const styles = StyleSheet.create({
   container: {},
-  header: {},
+  header: {
+    alignItems: "stretch",
+  },
 });
