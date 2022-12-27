@@ -14,7 +14,7 @@ export default function RoomBooking() {
     <Modal>
       <View style={styles.container}>
         <SafeAreaView></SafeAreaView>
-        <View>
+        <View style={styles.header}>
           {/* <Ionicons name="ios-close" size={24} color="black" /> */}
 
           <TouchableOpacity>
@@ -32,7 +32,5 @@ export default function RoomBooking() {
 
 const styles = StyleSheet.create({
   container: {},
-  closebtn: { paddingLeft: 3 },
-  loginbtn: { alignSelf: "flex-end", paddingRight: 7 },
-  text: { margin: 6 },
+  header: {},
 });
