@@ -22,7 +22,7 @@ export default function RoomBooking() {
         />
 
         <TouchableOpacity style={styles.loginbtn}>
-          <Text>Login</Text>
+          <Text>X</Text>
         </TouchableOpacity>
         <Text>Room Booking </Text>
       </View>
