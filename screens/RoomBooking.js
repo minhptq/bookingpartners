@@ -34,5 +34,6 @@ const styles = StyleSheet.create({
   container: {},
   header: {
     flex: 1,
+    flexDirection: "row",
   },
 });
