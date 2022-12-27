@@ -35,5 +35,6 @@ const styles = StyleSheet.create({
   header: {
     flex: 1,
     flexDirection: "row",
+    alignContent: "space-between",
   },
 });
