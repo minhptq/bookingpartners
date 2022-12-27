@@ -17,7 +17,7 @@ export default function RoomBooking() {
         <View>
           {/* <Ionicons name="ios-close" size={24} color="black" /> */}
 
-          <TouchableOpacity style={styles.loginbtn}>
+          <TouchableOpacity>
             <Text>X</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.loginbtn}>
