@@ -35,5 +35,6 @@ const styles = StyleSheet.create({
   header: {
     alignItems: "stretch",
     alignContent: "space-between",
+    flex: 1,
   },
 });
