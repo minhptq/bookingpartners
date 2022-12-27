@@ -33,6 +33,8 @@ export default function RoomBooking() {
 const styles = StyleSheet.create({
   container: {},
   header: {
+    paddingLeft: 5,
+    paddingRight: 5,
     flexDirection: "row",
     alignContent: "space-between",
   },
