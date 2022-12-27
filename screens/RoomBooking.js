@@ -20,11 +20,11 @@ export default function RoomBooking() {
           color="black"
           // style={styles.closebtn}
         />
-        ,
+
         <TouchableOpacity style={styles.loginbtn}>
           <Text>Login</Text>
         </TouchableOpacity>
-        ,<Text>Room Booking </Text>
+        <Text>Room Booking </Text>
       </View>
     </Modal>
   );
