@@ -21,7 +21,7 @@ export default function RoomBooking() {
             <Text>X</Text>
           </TouchableOpacity>
           <TouchableOpacity>
-            <Text>X</Text>
+            <Text>Login</Text>
           </TouchableOpacity>
         </View>
         <Text>Room Booking </Text>
