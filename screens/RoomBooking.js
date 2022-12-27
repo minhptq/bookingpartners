@@ -20,6 +20,9 @@ export default function RoomBooking() {
           <TouchableOpacity style={styles.loginbtn}>
             <Text>X</Text>
           </TouchableOpacity>
+          <TouchableOpacity style={styles.loginbtn}>
+            <Text>X</Text>
+          </TouchableOpacity>
         </View>
         <Text>Room Booking </Text>
       </View>
