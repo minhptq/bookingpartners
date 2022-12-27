@@ -14,16 +14,18 @@ export default function RoomBooking() {
     <Modal>
       <View style={styles.container}>
         <SafeAreaView></SafeAreaView>
-        <Ionicons
-          name="ios-close"
-          size={24}
-          color="black"
-          // style={styles.closebtn}
-        />
+        <View>
+          <Ionicons
+            name="ios-close"
+            size={24}
+            color="black"
+            // style={styles.closebtn}
+          />
 
-        <TouchableOpacity style={styles.loginbtn}>
-          <Text>X</Text>
-        </TouchableOpacity>
+          <TouchableOpacity style={styles.loginbtn}>
+            <Text>X</Text>
+          </TouchableOpacity>
+        </View>
         <Text>Room Booking </Text>
       </View>
     </Modal>
