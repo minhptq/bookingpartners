@@ -28,7 +28,7 @@ export default function RoomBooking() {
               backgroundColor: "white",
               justifyContent: "center",
               padding: 4,
-              height: 23,
+              height: 25,
             }}
           >
             <Text style={{ fontSize: 18 }}>Login</Text>
