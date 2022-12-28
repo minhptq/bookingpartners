@@ -15,7 +15,7 @@ export default function RoomBooking() {
       <View style={styles.container}>
         <SafeAreaView></SafeAreaView>
         <View style={styles.header}>
-          <View style={{ justifyContent: "center" }}>
+          <View style={styles.closebtn}>
             <Ionicons name="ios-close" size={24} color="black" />
           </View>
           <TouchableOpacity style={styles.loginbtn}>
@@ -36,6 +36,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
   },
+  closebtn: { justifyContent: "center" },
   loginbtn: {
     justifyContent: "center",
     paddingLeft: 4,
