@@ -30,7 +30,7 @@ export default function RoomBooking() {
               padding: 4,
             }}
           >
-            <Text style={{ fontSize: 23 }}>Login</Text>
+            <Text style={{ fontSize: 20 }}>Login</Text>
           </TouchableOpacity>
         </View>
         <Text>Room Booking </Text>
