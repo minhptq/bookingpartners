@@ -42,7 +42,6 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   loginbtn: {
-    backgroundColor: "yellow",
     justifyContent: "center",
     paddingLeft: 4,
     paddingRight: 4,
