@@ -22,7 +22,7 @@ export default function RoomBooking() {
             style={{ backgroundColor: "blue" }}
           />
           <TouchableOpacity
-            style={{ backgroundColor: "blue", justifyContent: "space-between" }}
+            style={{ backgroundColor: "blue", justifyContent: "center" }}
           >
             <Text>Login</Text>
           </TouchableOpacity>
