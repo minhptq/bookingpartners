@@ -24,7 +24,7 @@ export default function RoomBooking() {
             />
           </View>
           <TouchableOpacity style={styles.loginbtn}>
-            <Text style={{ fontSize: 17, fontWeight: "500" }}>Login</Text>
+            <Text style={styles.loginbtntittle}>Login</Text>
           </TouchableOpacity>
         </View>
         <Text>Room Booking </Text>
@@ -45,5 +45,9 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     paddingLeft: 4,
     paddingRight: 4,
+  },
+  loginbtntittle: {
+    fontSize: 17,
+    fontWeight: "500",
   },
 });
