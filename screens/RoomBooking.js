@@ -19,11 +19,11 @@ export default function RoomBooking() {
             name="ios-close"
             size={24}
             color="black"
-            style={{ backgroundColor: "blue" }}
+            style={{ backgroundColor: "white" }}
           />
           <TouchableOpacity
             style={{
-              backgroundColor: "blue",
+              backgroundColor: "white",
               justifyContent: "center",
               padding: 3,
             }}
