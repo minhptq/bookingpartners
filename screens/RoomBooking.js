@@ -25,7 +25,7 @@ export default function RoomBooking() {
           </View>
           <TouchableOpacity
             style={{
-              backgroundColor: "white",
+              backgroundColor: "yellow",
               justifyContent: "center",
               padding: 4,
             }}
