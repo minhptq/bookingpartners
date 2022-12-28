@@ -15,12 +15,14 @@ export default function RoomBooking() {
       <View style={styles.container}>
         <SafeAreaView></SafeAreaView>
         <View style={styles.header}>
-          <Ionicons
-            name="ios-close"
-            size={24}
-            color="black"
-            style={{ backgroundColor: "white", justifyContent: "center" }}
-          />
+          <View>
+            <Ionicons
+              name="ios-close"
+              size={24}
+              color="black"
+              style={{ backgroundColor: "white", justifyContent: "center" }}
+            />
+          </View>
           <TouchableOpacity
             style={{
               backgroundColor: "white",
