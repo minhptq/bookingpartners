@@ -23,14 +23,7 @@ export default function RoomBooking() {
               style={{ backgroundColor: "white", justifyContent: "center" }}
             />
           </View>
-          <TouchableOpacity
-            style={{
-              backgroundColor: "yellow",
-              justifyContent: "center",
-              paddingLeft: 4,
-              paddingRight: 4,
-            }}
-          >
+          <TouchableOpacity style={styles.loginbtn}>
             <Text style={{ fontSize: 17, fontWeight: "500" }}>Login</Text>
           </TouchableOpacity>
         </View>
@@ -47,5 +40,11 @@ const styles = StyleSheet.create({
     paddingRight: 5,
     flexDirection: "row",
     justifyContent: "space-between",
+  },
+  loginbtn: {
+    backgroundColor: "yellow",
+    justifyContent: "center",
+    paddingLeft: 4,
+    paddingRight: 4,
   },
 });
