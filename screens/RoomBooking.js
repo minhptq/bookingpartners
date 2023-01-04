@@ -85,6 +85,7 @@ export default function RoomBooking() {
                 </TouchableOpacity>
               </View>
             }
+            stickyHeaderIndices={[0]}
             stickyHeaderHiddenOnScroll={false}
             renderItem={renderItem}
             keyExtractor={(item) => item.id}
