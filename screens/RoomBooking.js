@@ -24,7 +24,11 @@ const DATA = [
     title: "Third Item",
   },
 ];
-
+const Item = ({ title }) => (
+  <View style={styles.item}>
+    <Text style={styles.title}>{title}</Text>
+  </View>
+);
 export default function RoomBooking() {
   const renderItem = ({ item }) => <Item title={item.title} />;
   return (
