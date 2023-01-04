@@ -78,5 +78,6 @@ const styles = StyleSheet.create({
     marginVertical: 0,
     marginHorizontal: 0,
     width: "50%",
+    borderWidth: 1,
   },
 });
