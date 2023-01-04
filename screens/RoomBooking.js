@@ -43,7 +43,7 @@ export default function RoomBooking() {
             <Text style={styles.loginbtntittle}>Login</Text>
           </TouchableOpacity>
         </View>
-        <View style={styles.header}>
+        <View style={styles.flatlistcontainer}>
           <FlatList
             data={DATA}
             renderItem={renderItem}
