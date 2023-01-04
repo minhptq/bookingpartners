@@ -131,5 +131,6 @@ const styles = StyleSheet.create({
     marginHorizontal: 0,
     width: "50%",
     borderWidth: 1,
+    height: 100,
   },
 });
