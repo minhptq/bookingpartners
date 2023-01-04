@@ -5,11 +5,28 @@ import {
   Modal,
   SafeAreaView,
   TouchableOpacity,
+  FlatList,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { Table, Row, Rows } from "react-native-table-component";
 
+const DATA = [
+  {
+    id: "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+    title: "First Item",
+  },
+  {
+    id: "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+    title: "Second Item",
+  },
+  {
+    id: "58694a0f-3da1-471f-bd96-145571e29d72",
+    title: "Third Item",
+  },
+];
+
 export default function RoomBooking() {
+  const renderItem = ({ item }) => <Item title={item.title} />;
   return (
     <Modal>
       <View style={styles.container}>
@@ -22,7 +39,11 @@ export default function RoomBooking() {
             <Text style={styles.loginbtntittle}>Login</Text>
           </TouchableOpacity>
         </View>
-        <Text>Room Booking </Text>
+        <FlatList
+          data={DATA}
+          renderItem={renderItem}
+          keyExtractor={(item) => item.id}
+        />
       </View>
     </Modal>
   );
