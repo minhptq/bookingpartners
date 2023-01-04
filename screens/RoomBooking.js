@@ -72,4 +72,10 @@ const styles = StyleSheet.create({
     fontSize: 17,
     fontWeight: "500",
   },
+  item: {
+    backgroundColor: "#f9c2ff",
+    padding: 20,
+    marginVertical: 8,
+    marginHorizontal: 16,
+  },
 });
