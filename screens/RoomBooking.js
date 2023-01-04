@@ -74,6 +74,10 @@ const styles = StyleSheet.create({
     fontSize: 17,
     fontWeight: "500",
   },
+  flatlistcontainer: {
+    paddingLeft: 9,
+    paddingRight: 9,
+  },
   item: {
     backgroundColor: "#f9c2ff",
     padding: 20,
