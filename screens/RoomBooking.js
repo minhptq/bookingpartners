@@ -43,12 +43,14 @@ export default function RoomBooking() {
             <Text style={styles.loginbtntittle}>Login</Text>
           </TouchableOpacity>
         </View>
-        <FlatList
-          data={DATA}
-          renderItem={renderItem}
-          keyExtractor={(item) => item.id}
-          numColumns={2}
-        />
+        <View>
+          <FlatList
+            data={DATA}
+            renderItem={renderItem}
+            keyExtractor={(item) => item.id}
+            numColumns={2}
+          />
+        </View>
       </View>
     </Modal>
   );
