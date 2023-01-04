@@ -50,6 +50,7 @@ export default function RoomBooking() {
             keyExtractor={(item) => item.id}
             numColumns={2}
             columnWrapperStyle={{ justifyContent: "space-between" }}
+            ItemSeparatorComponent={<View style={{ width: 4 }}></View>}
           />
         </View>
       </View>
