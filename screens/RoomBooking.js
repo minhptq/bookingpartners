@@ -47,6 +47,7 @@ export default function RoomBooking() {
           data={DATA}
           renderItem={renderItem}
           keyExtractor={(item) => item.id}
+          numColumns={2}
         />
       </View>
     </Modal>
