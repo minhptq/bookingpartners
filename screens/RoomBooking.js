@@ -35,17 +35,20 @@ export default function RoomBooking() {
     <Modal>
       <View style={styles.container}>
         <SafeAreaView></SafeAreaView>
-        <View style={styles.header}>
-          <View style={styles.closebtn}>
-            <Ionicons name="ios-close" size={24} color="black" />
-          </View>
-          <TouchableOpacity style={styles.loginbtn}>
-            <Text style={styles.loginbtntittle}>Login</Text>
-          </TouchableOpacity>
-        </View>
+
         <View style={styles.flatlistcontainer}>
           <FlatList
             data={DATA}
+            StickyHeaderComponent={
+              <View style={styles.header}>
+                <View style={styles.closebtn}>
+                  <Ionicons name="ios-close" size={24} color="black" />
+                </View>
+                <TouchableOpacity style={styles.loginbtn}>
+                  <Text style={styles.loginbtntittle}>Login</Text>
+                </TouchableOpacity>
+              </View>
+            }
             renderItem={renderItem}
             keyExtractor={(item) => item.id}
             numColumns={2}
