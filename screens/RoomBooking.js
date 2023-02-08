@@ -92,7 +92,7 @@ export default function RoomBooking() {
             // columnWrapperStyle={{ justifyContent: "space-between" }}
 
             ItemSeparatorComponent={
-              <View style={{ width: 2 }}>
+              <View style={{}}>
                 <Text></Text>
               </View>
             }
