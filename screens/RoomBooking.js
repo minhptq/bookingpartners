@@ -91,6 +91,7 @@ export default function RoomBooking() {
             numColumns={2}
             columnWrapperStyle={{ justifyContent: "space-between" }}
             showsHorizontalScrollIndicator={false}
+            showsVerticalScrollIndicator={false}
             ItemSeparatorComponent={
               <View style={{}}>
                 <Text></Text>
