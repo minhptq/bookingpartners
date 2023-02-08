@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     marginVertical: 20,
   },
   item: {
-    backgroundColor: "blue",
+    backgroundColor: "darkblue",
     alignItems: "center",
     justifyContent: "center",
     flex: 1,
