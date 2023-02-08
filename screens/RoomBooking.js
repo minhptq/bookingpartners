@@ -1,137 +1,78 @@
-import {
-  StyleSheet,
-  Text,
-  View,
-  Modal,
-  SafeAreaView,
-  TouchableOpacity,
-  FlatList,
-} from "react-native";
-import { Ionicons } from "@expo/vector-icons";
-import { Table, Row, Rows } from "react-native-table-component";
+import React from "react";
+import { StyleSheet, Text, View, FlatList, Dimensions } from "react-native";
 
-const DATA = [
-  {
-    id: "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
-    title: "First Item",
-  },
-  {
-    id: "3ac68afc-c605-48d3-a4f8-fbd91aa97f63s",
-    title: "Second Item",
-  },
-  {
-    id: "58694a0f-3da1-471f-bd96-145571e29d72",
-    title: "Third Item",
-  },
-  {
-    id: "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
-    title: "First Item",
-  },
-  {
-    id: "3ac68afc-c605-48d3-a4f8-fbd91aa97f63we",
-    title: "Second Item",
-  },
-  {
-    id: "58694a0f-3da1-471f-bd96-145571e29d72jghf",
-    title: "Third Item",
-  },
-  {
-    id: "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
-    title: "First Item",
-  },
-  {
-    id: "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
-    title: "Second Item",
-  },
-  {
-    id: "58694a0f-3da1-471f-bd96-145571e29d72df",
-    title: "Third Item",
-  },
-  {
-    id: "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
-    title: "First Item",
-  },
-  {
-    id: "3ac68afc-c605-48d3-a4f8-fbd91aa97f63hfd",
-    title: "Second Item",
-  },
+const data = [
+  { key: "A" },
+  { key: "B" },
+  { key: "C" },
+  { key: "D" },
+  { key: "E" },
+  { key: "F" },
+  { key: "G" },
+  { key: "H" },
+  { key: "I" },
+  { key: "J" },
+  // { key: 'K' },
+  // { key: 'L' },
 ];
-const Item = ({ title }) => (
-  <View style={styles.item}>
-    <Text style={styles.title}>{title}</Text>
-  </View>
-);
-export default function RoomBooking() {
-  const renderItem = ({ item }) => <Item title={item.title} />;
-  return (
-    <Modal>
-      <View style={styles.container}>
-        <SafeAreaView></SafeAreaView>
 
-        <View style={styles.flatlistcontainer}>
-          <FlatList
-            data={DATA}
-            StickyHeaderComponent={
-              <View style={styles.header}>
-                <View style={styles.closebtn}>
-                  <Ionicons name="ios-close" size={24} color="black" />
-                </View>
-                <TouchableOpacity style={styles.loginbtn}>
-                  <Text style={styles.loginbtntittle}>Login</Text>
-                </TouchableOpacity>
-              </View>
-            }
-            stickyHeaderHiddenOnScroll={true}
-            renderItem={renderItem}
-            keyExtractor={(item) => item.id}
-            numColumns={2}
-            columnWrapperStyle={{ justifyContent: "space-between" }}
-            showsVerticalScrollIndicator={false}
-            ItemSeparatorComponent={
-              <View
-                style={{
-                  height: 5,
-                  width: "100%",
-                  backgroundColor: "#607D8B",
-                }}
-              />
-            }
-          />
-        </View>
+const formatData = (data, numColumns) => {
+  const numberOfFullRows = Math.floor(data.length / numColumns);
+
+  let numberOfElementsLastRow = data.length - numberOfFullRows * numColumns;
+  while (
+    numberOfElementsLastRow !== numColumns &&
+    numberOfElementsLastRow !== 0
+  ) {
+    data.push({ key: `blank-${numberOfElementsLastRow}`, empty: true });
+    numberOfElementsLastRow++;
+  }
+
+  return data;
+};
+
+const numColumns = 3;
+export default class RoomBookings extends React.Component {
+  renderItem = ({ item, index }) => {
+    if (item.empty === true) {
+      return <View style={[styles.item, styles.itemInvisible]} />;
+    }
+    return (
+      <View style={styles.item}>
+        <Text style={styles.itemText}>{item.key}</Text>
       </View>
-    </Modal>
-  );
+    );
+  };
+
+  render() {
+    return (
+      <FlatList
+        data={formatData(data, numColumns)}
+        style={styles.container}
+        renderItem={this.renderItem}
+        numColumns={numColumns}
+      />
+    );
+  }
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1 },
-  header: {
-    paddingLeft: 5,
-    paddingRight: 5,
-    flexDirection: "row",
-    justifyContent: "space-between",
-  },
-  closebtn: { justifyContent: "center" },
-  loginbtn: {
-    justifyContent: "center",
-    paddingLeft: 4,
-    paddingRight: 4,
-  },
-  loginbtntittle: {
-    fontSize: 17,
-    fontWeight: "500",
-  },
-  flatlistcontainer: {
-    paddingLeft: 9,
-    paddingRight: 9,
+  container: {
+    flex: 1,
+    marginVertical: 20,
   },
   item: {
-    backgroundColor: "#f9c2ff",
-    padding: 20,
-    marginVertical: 0,
-    marginHorizontal: 0,
+    backgroundColor: "#4D243D",
+    alignItems: "center",
+    justifyContent: "center",
     flex: 1,
-    borderWidth: 1,
-    height: 300,
+    margin: 1,
+    height: Dimensions.get("window").width / numColumns, // approximate a square
+  },
+  itemInvisible: {
+    backgroundColor: "transparent",
+  },
+  itemText: {
+    color: "#fff",
   },
 });
