@@ -89,7 +89,6 @@ export default function RoomBooking() {
             renderItem={renderItem}
             keyExtractor={(item) => item.id}
             numColumns={2}
-            columnWrapperStyle={{}}
             columnWrapperStyle={{ justifyContent: "space-between" }}
             showsVerticalScrollIndicator={false}
             contentContainerStyle={{}}
