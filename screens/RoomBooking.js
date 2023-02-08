@@ -31,7 +31,7 @@ const formatData = (data, numColumns) => {
   return data;
 };
 
-const numColumns = 3;
+const numColumns = 2;
 export default class RoomBookings extends React.Component {
   renderItem = ({ item, index }) => {
     if (item.empty === true) {
