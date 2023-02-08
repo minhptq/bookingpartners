@@ -135,7 +135,7 @@ const styles = StyleSheet.create({
     marginVertical: 0,
     marginHorizontal: 0,
 
-    // flex: 1,
+    flex: 1,
     borderWidth: 1,
     height: 300,
   },
