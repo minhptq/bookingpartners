@@ -91,11 +91,11 @@ export default function RoomBooking() {
             numColumns={2}
             columnWrapperStyle={{ justifyContent: "space-between" }}
             showsVerticalScrollIndicator={false}
-            ItemSeparatorComponent={
-              <View style={{}}>
-                <Text></Text>
-              </View>
-            }
+            // ItemSeparatorComponent={
+            //   <View style={{}}>
+            //     <Text></Text>
+            //   </View>
+            // }
           />
         </View>
       </View>
