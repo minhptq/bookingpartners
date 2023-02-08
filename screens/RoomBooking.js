@@ -90,7 +90,6 @@ export default function RoomBooking() {
             keyExtractor={(item) => item.id}
             numColumns={2}
             columnWrapperStyle={{ justifyContent: "space-between" }}
-            showsHorizontalScrollIndicator={false}
             showsVerticalScrollIndicator={false}
             ItemSeparatorComponent={
               <View style={{}}>
