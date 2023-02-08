@@ -93,7 +93,7 @@ export default function RoomBooking() {
 
             ItemSeparatorComponent={
               <View style={{ width: 2 }}>
-                <Text></Text>
+                <Text>haha</Text>
               </View>
             }
           />
