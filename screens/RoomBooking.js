@@ -2,18 +2,18 @@ import React from "react";
 import { StyleSheet, Text, View, FlatList, Dimensions } from "react-native";
 
 const data = [
-  { key: "A" },
-  { key: "B" },
-  { key: "C" },
-  { key: "D" },
-  { key: "E" },
-  { key: "F" },
-  { key: "G" },
-  { key: "H" },
-  { key: "I" },
+  { key: "02" },
+  { key: "101" },
+  { key: "102" },
+  { key: "103" },
+  { key: "104" },
+  { key: "105" },
+  { key: "201" },
+  { key: "202" },
+  { key: "203" },
 
-  // { key: 'K' },
-  // { key: 'L' },
+  { key: "204" },
+  { key: "205" },
 ];
 
 const formatData = (data, numColumns) => {
