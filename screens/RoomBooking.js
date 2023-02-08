@@ -75,7 +75,6 @@ export default function RoomBooking() {
         <View style={styles.flatlistcontainer}>
           <FlatList
             data={DATA}
-            style={{ flex: 1 }}
             StickyHeaderComponent={
               <View style={styles.header}>
                 <View style={styles.closebtn}>
