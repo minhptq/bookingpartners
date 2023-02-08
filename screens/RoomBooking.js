@@ -55,10 +55,6 @@ const DATA = [
     id: "3ac68afc-c605-48d3-a4f8-fbd91aa97f63hfd",
     title: "Second Item",
   },
-  {
-    id: "58694a0f-3da1-471f-bd96-145571e29d72kj",
-    title: "Third Item",
-  },
 ];
 const Item = ({ title }) => (
   <View style={styles.item}>
