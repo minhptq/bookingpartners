@@ -89,6 +89,7 @@ export default function RoomBooking() {
             renderItem={renderItem}
             keyExtractor={(item) => item.id}
             numColumns={2}
+            columnWrapperStyle={{}}
             columnWrapperStyle={{ justifyContent: "space-between" }}
             showsVerticalScrollIndicator={false}
             contentContainerStyle={{}}
@@ -135,7 +136,7 @@ const styles = StyleSheet.create({
     padding: 20,
     marginVertical: 0,
     marginHorizontal: 0,
-    width: "50%",
+    // width: "50%",
     borderWidth: 1,
     height: 300,
   },
