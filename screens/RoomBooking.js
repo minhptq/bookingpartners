@@ -95,7 +95,7 @@ export default function RoomBooking() {
             ItemSeparatorComponent={
               <View
                 style={{
-                  height: 1,
+                  height: 5,
                   width: "100%",
                   backgroundColor: "#607D8B",
                 }}
