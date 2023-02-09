@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     marginRight: 1,
   },
   item: {
-    fontSize: 17,
+    fontSize: 22,
     backgroundColor: "darkblue",
     alignItems: "center",
     justifyContent: "center",
