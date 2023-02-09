@@ -38,6 +38,8 @@ export default class RoomBookings extends React.Component {
     }
     return (
       <View style={styles.item}>
+        <Text style={styles.itemText}>{"2:15"}</Text>
+        <Text style={styles.itemText}>{item.key}</Text>
         <Text style={styles.itemText}>{item.key}</Text>
       </View>
     );
