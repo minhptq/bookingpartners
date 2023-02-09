@@ -6,11 +6,7 @@ const Stack = createNativeStackNavigator();
 
 export default function SignupStack() {
   return (
-    <Stack.Navigator
-      screenOptions={{
-        headerShown: false,
-      }}
-    >
+    <Stack.Navigator>
       <Stack.Screen name="RoomBooking" component={RoomBooking} />
       <Stack.Screen name="PhoneOrEmail" component={PhoneOrEmail} />
     </Stack.Navigator>
