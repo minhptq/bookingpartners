@@ -58,7 +58,7 @@ export default class RoomBookings extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginVertical: 20,
+    marginVertical: 0,
   },
   item: {
     backgroundColor: "darkblue",
