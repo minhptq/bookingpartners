@@ -63,7 +63,6 @@ const styles = StyleSheet.create({
     marginRight: 1,
   },
   item: {
-    fontSize: 22,
     backgroundColor: "darkblue",
     alignItems: "center",
     justifyContent: "center",
@@ -77,5 +76,6 @@ const styles = StyleSheet.create({
   },
   itemText: {
     color: "#fff",
+    fontSize: 22,
   },
 });
