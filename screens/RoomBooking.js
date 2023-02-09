@@ -59,6 +59,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     marginVertical: 0,
+    marginLeft: 1,
+    marginRight: 1,
   },
   item: {
     backgroundColor: "darkblue",
