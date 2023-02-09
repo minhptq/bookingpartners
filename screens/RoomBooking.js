@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     flex: 1,
     margin: 2,
-    borderRadius: 7,
+    borderRadius: 10,
     height: Dimensions.get("window").width / numColumns, // approximate a square
   },
   itemInvisible: {
