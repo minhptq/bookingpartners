@@ -2,17 +2,17 @@ import React from "react";
 import { StyleSheet, Text, View, FlatList, Dimensions } from "react-native";
 
 const data = [
-  { key: "02", hourbooking: true },
-  { key: "101", hourbooking: true },
-  { key: "102", hourbooking: true },
-  { key: "103", hourbooking: true },
-  { key: "104", hourbooking: true },
-  { key: "105", hourbooking: true },
+  { key: "02", hourbooking: false },
+  { key: "101", hourbooking: false },
+  { key: "102", hourbooking: false },
+  { key: "103", hourbooking: false },
+  { key: "104", hourbooking: false },
+  { key: "105", hourbooking: false },
   { key: "201", hourbooking: true },
-  { key: "202", hourbooking: true },
-  { key: "203", hourbooking: true },
-  { key: "204", hourbooking: true },
-  { key: "205", hourbooking: true },
+  { key: "202", hourbooking: false },
+  { key: "203", hourbooking: false },
+  { key: "204", hourbooking: false },
+  { key: "205", hourbooking: false },
 ];
 
 const formatData = (data, numColumns) => {
